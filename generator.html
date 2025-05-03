@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote and Clue Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .quote-input {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .remove-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .add-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .generate-button {
+            background-color: lightgrey;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <label for="title">Title</label>
+    <input id="title" type="text" placeholder="Title">
+    <label for="creator">Creator</label>
+    <input id="creator" type="text" placeholder="Creator"><br>
+
+    <label for="quote">Quote</label>
+    <textarea id="quote" class="quote-input" placeholder="Enter your quote here..."></textarea>
+
+    <table id="clueTable">
+        <thead>
+            <tr>
+                <th>Answer</th>
+                <th>Clue</th>
+                <th>Explanation</th>
+                <th>Delete </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" placeholder="Answer"></td>
+                <td><textarea placeholder="Clue" style="width: 100%;"></textarea></td>
+                <td><textarea placeholder="Explanation" style="width: 100%;"></textarea></td>
+                <td><button class="remove-button">X</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Answer"></td>
+                <td><textarea placeholder="Clue" style="width: 100%;"></textarea></td>
+                <td><textarea placeholder="Explanation" style="width: 100%;"></textarea></td>
+                <td><button class="remove-button">X</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Answer"></td>
+                <td><textarea placeholder="Clue" style="width: 100%;"></textarea></td>
+                <td><textarea placeholder="Explanation" style="width: 100%;"></textarea></td>
+                <td><button class="remove-button">X</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="add-button" id="add_button">+</button><br><br>
+
+    <p id = "anagram_results" style ="font-variant: normal; margin-top: 0%; margin-bottom: 0%;"></p>
+    <button class="generate-button" id="check_button">Check if true anagram</button>
+    <button class="generate-button" id="save_button">Save</button><br>
+    <button class="generate-button" id="generate_button">Generate Puzzle</button><br>
+    Import json file <input type="file" id="fileInput">
+    </body>
+
+    <script src='generator.js' defer></script>
+    <script src='anagram.js' defer></script>
+
+</body>
+</html>
