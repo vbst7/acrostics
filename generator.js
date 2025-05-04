@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('check_button').addEventListener('click', isAnagram);
     document.getElementById('save_button').addEventListener('click', generate_wip); 
     document.getElementById('generate_button').addEventListener('click', generate); 
+    document.getElementById('back_page_button').addEventListener('click', function() {
+        window.location.href = 'https://vbst7.github.io/acrostics/index.html';
+      });
+    document.getElementById('about_page_button').addEventListener('click', function() {
+        window.location.href = 'https://vbst7.github.io/acrostics/about.html';
+    });
 })
 
 //adds an empty row to the bottom of the clue table

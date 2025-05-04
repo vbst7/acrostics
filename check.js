@@ -14,6 +14,16 @@ function checkLetter(){
     check(selected)
 }
 
+function revealLetter(){
+    const val = selected.solution;
+    const index = selected.index;
+
+    selected.style.color = 'black'
+    selected.pair.style.color = 'black'
+    selected.innerHTML = `<div class="number">${index}</div><div class="character">${val}</div>`;
+    selected.pair.innerHTML = `<div class="number">${index}</div><div class="character">${val}</div>`;
+}
+
 function checkAnswer(){
     //if current selected is in the quote, set its pair to selected
     if (selected.grid === document.getElementById('quote_grid')) selected = selected.pair;

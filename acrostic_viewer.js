@@ -25,10 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('check_solution_button').addEventListener('click', checkSolution);
     document.getElementById('check_answer_button').addEventListener('click', checkAnswer);
     document.getElementById('check_letter_button').addEventListener('click', checkLetter);
+    document.getElementById('reveal_letter_button').addEventListener('click', revealLetter);
+    document.getElementById('generate_page_button').addEventListener('click', function() {
+        window.location.href = 'https://vbst7.github.io/acrostics/generator.html';
+      });
+    document.getElementById('about_page_button').addEventListener('click', function() {
+        window.location.href = 'https://vbst7.github.io/acrostics/about.html';
+      });
 });
 
 function fill_in(file){
     const quote_grid = document.getElementById('quote_grid')
+    document.getElementById('credit').innerHTML = `${file.title} - by ${file.creator}`
     const sticky = document.getElementById('sticky')
     sticky.style.position = "sticky"
     sticky.style.top = 0;
