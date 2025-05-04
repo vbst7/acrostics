@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function import_params(url){
-    const fileUrl = `/acrostics/` + url
+    const fileUrl = `/acrostics/acrostics/` + url
     fetch(fileUrl)
     .then(response => {
         if (!response.ok) {
