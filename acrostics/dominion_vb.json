@@ -1,0 +1,419 @@
+{
+  "creator": "Valerie B",
+  "title": "Dominion Acrostic",
+  "quote": "If I say, \"feed the blue dog, then take it for a walk,\" \"it\" refers to the blue dog, including its blueness, but \"it\" does not mean \"the dog you fed.\" We are talking about a blue dog, and I am giving you two commands concerning it. Feed it, walk it. -Donald X",
+  "answers": [
+    {
+      "clue": "A secluded river location may be given this status by a Blockade.",
+      "explanation": "Secluded Shrine and River Shrine can both be set aside by Blockade. If another player gains such a Shrine in their buy phase, they gain a curse, activating Defiled Shrine.",
+      "answer": "Defiled",
+      "indices": [
+        83,
+        107,
+        6,
+        179,
+        14,
+        73,
+        17
+      ]
+    },
+    {
+      "clue": "______ Sea ______ Do.",
+      "explanation": "A play on the expression \"Monkey See Monkey Do\". Monkey is from Seaside.",
+      "answer": "Monkey",
+      "indices": [
+        90,
+        47,
+        116,
+        178,
+        7,
+        143
+      ]
+    },
+    {
+      "clue": "With only one copy, it can hardly be considered \"of plenty\".",
+      "explanation": "The Artifact Horn has only one copy. Reference to Horn of Plenty",
+      "answer": "Horn",
+      "indices": [
+        95,
+        18,
+        32,
+        87
+      ]
+    },
+    {
+      "clue": "Anti-capitalist spiritual awakening.",
+      "explanation": "The Prophesy Enlightenment turn Treasures played in the Action phase into cantrips. This is the opposite effect of (and a counter to) the Project Capitalism, which turns Action cards into Treasures.",
+      "answer": "Enlightenment",
+      "indices": [
+        170,
+        141,
+        36,
+        164,
+        19,
+        11,
+        68,
+        161,
+        183,
+        136,
+        85,
+        74,
+        168
+      ]
+    },
+    {
+      "clue": "You may do this three times: +3 cards; Put a card from your hand onto your deck.",
+      "explanation": "A combination of the texts of King's Court and Courtyard.",
+      "answer": "King's Courtyard",
+      "indices": [
+        26,
+        81,
+        132,
+        137,
+        45,
+        157,
+        129,
+        121,
+        40,
+        20,
+        5,
+        153,
+        44,
+        133
+      ]
+    },
+    {
+      "clue": "Needlessly sexy animal.",
+      "explanation": "Vampire infamously called \"needlessly sexy\". Vampire is exchanged for Bat",
+      "answer": "Bat",
+      "indices": [
+        13,
+        108,
+        89
+      ]
+    },
+    {
+      "clue": "Intriguing source of plagiarism, or a set and its +Buy landscape.",
+      "explanation": "The original Intrigue 2E box art was partially traced from photos of Renaissance Fair cosplayers. Fair is a Project from Renaissance.",
+      "answer": "Renaissance Fair",
+      "indices": [
+        162,
+        43,
+        59,
+        33,
+        134,
+        3,
+        156,
+        176,
+        65,
+        149,
+        96,
+        103,
+        92,
+        115,
+        109
+      ]
+    },
+    {
+      "clue": "Ruin that initially contains Rising Sun.",
+      "explanation": "Abandoned Mine initials are AM. The sun rises in the AM (morning).",
+      "answer": "Abandoned Mine",
+      "indices": [
+        112,
+        119,
+        118,
+        154,
+        181,
+        31,
+        23,
+        127,
+        186,
+        151,
+        28,
+        159,
+        110
+      ]
+    },
+    {
+      "clue": "Animal that makes an Experiment infinitely replicable.",
+      "explanation": "If Experiment is the Way of the Mouse card, it is not returned to its pile. In real life, experiments can be replicated.",
+      "answer": "Mouse",
+      "indices": [
+        152,
+        56,
+        145,
+        69,
+        8
+      ]
+    },
+    {
+      "clue": "Best Heirloom ever.",
+      "explanation": "GOAT stands for Greatest of All Time, and is the name of an Heirloom.",
+      "answer": "GOAT",
+      "indices": [
+        57,
+        84,
+        123,
+        80
+      ]
+    },
+    {
+      "clue": "Cantrip that rewards desiring skillfully.",
+      "explanation": "Desiring = Wishing. Skillfully = Well.",
+      "answer": "Wishing Well",
+      "indices": [
+        106,
+        138,
+        76,
+        21,
+        140,
+        93,
+        99,
+        34,
+        12,
+        125,
+        113
+      ]
+    },
+    {
+      "clue": "Victorious Knight's relation to creator, initially.",
+      "explanation": "Victorious Knight = Dame Josephine, who is named after Donald X' Significant Other.",
+      "answer": "SO",
+      "indices": [
+        86,
+        158
+      ]
+    },
+    {
+      "clue": "Game genre involving Carpenter and Develop.",
+      "explanation": "The genre of Dominion. Building a physical deck in the yard is a form of carpentry/development.",
+      "answer": "Deck-building",
+      "indices": [
+        172,
+        171,
+        160,
+        37,
+        78,
+        15,
+        167,
+        52,
+        9,
+        173,
+        163,
+        130
+      ]
+    },
+    {
+      "clue": "One could also beg, trade, or conquer to achieve the results of this skill.",
+      "explanation": "Verb form of Weaver. Weaver, Beggar, Trade, and Conquest can all gain two Silvers.",
+      "answer": "Weave",
+      "indices": [
+        147,
+        16,
+        25,
+        139,
+        22
+      ]
+    },
+    {
+      "clue": "The Royal Seal variant of choice.",
+      "explanation": "Treasure that top-decks gained cards (Royal Seal variant). A \"choose one\" card.",
+      "answer": "Bauble",
+      "indices": [
+        51,
+        131,
+        62,
+        70,
+        177,
+        91
+      ]
+    },
+    {
+      "clue": "Lackeys, or a magical Loot.",
+      "explanation": "Staff as in employees, or the Loot.",
+      "answer": "Staff",
+      "indices": [
+        77,
+        48,
+        184,
+        169,
+        1
+      ]
+    },
+    {
+      "clue": "Field found atop Territory.",
+      "explanation": "Battle Plan is on top of Territory. Gaining Territory activates Battlefield.",
+      "answer": "Battle",
+      "indices": [
+        124,
+        35,
+        122,
+        174,
+        71,
+        104
+      ]
+    },
+    {
+      "clue": "Cursing: fun for all ages!",
+      "explanation": "Witches are cursers with an age theme (Young/Old Witch)",
+      "answer": "Witch",
+      "indices": [
+        175,
+        0,
+        146,
+        60,
+        49
+      ]
+    },
+    {
+      "clue": "Originally Roman gods', now nature's.",
+      "explanation": "When Boons were in Empires, they originally had names like \"Jupiter's Gift\" before being renamed to stuff like \"The Wind's Gift\"",
+      "answer": "Gift",
+      "indices": [
+        66,
+        2,
+        30,
+        180
+      ]
+    },
+    {
+      "clue": "Any weak removed card, or a hand full of them",
+      "explanation": "Weak removed cards are called duds, as is a turn in which you can't do much, which a hand of bad cards would cause.",
+      "answer": "Dud",
+      "indices": [
+        128,
+        72,
+        97
+      ]
+    },
+    {
+      "clue": "!____ Philosopher's Stone :its_a_bad_card:",
+      "explanation": "DomBot Discord command !good . Reacts with :its_a_bad_card: or :its_a_good_card: emotes.",
+      "answer": "Good",
+      "indices": [
+        117,
+        98,
+        101,
+        105
+      ]
+    },
+    {
+      "clue": "What you say before playing Snowball Fight, or begrudgingly trashing your Snowy Village.",
+      "explanation": "Snowball Fight comes from the Christmas Kingdom, and is a card that involves physically throwing cards at other players. Lookout may force you to trash a Snowy Village, a card that originally came from the Christmas Kingdom.",
+      "answer": "Lookout",
+      "indices": [
+        185,
+        182,
+        88,
+        114,
+        120,
+        53,
+        24
+      ]
+    },
+    {
+      "clue": "Groundskeeper's anachronistic shirt.",
+      "explanation": "Groundskeeper art is wearing what looks like a T-shirt",
+      "answer": "t",
+      "indices": [
+        29
+      ]
+    },
+    {
+      "clue": "Flavorful code word \"on the plate.\"",
+      "explanation": "Reference to Intrigue flavor text",
+      "answer": "Egg",
+      "indices": [
+        27,
+        142,
+        166
+      ]
+    },
+    {
+      "clue": "Same score, same turn count, and nobody starved to death.",
+      "explanation": "Definition of a tie at game end.",
+      "answer": "tie",
+      "indices": [
+        10,
+        38,
+        41
+      ]
+    },
+    {
+      "clue": "Lover of Zeus, played as Way of the Ox.",
+      "explanation": "Greek Myth in which she is turned into a cow.",
+      "answer": "Io",
+      "indices": [
+        58,
+        148
+      ]
+    },
+    {
+      "clue": "OPT:TYJTO(ISF_);_____,CUT3DNCYHIPAGACOE.",
+      "explanation": "The first letters of every word of the text of Pilgrimage (credit to JNails for this type of clue)",
+      "answer": "UTIIFU",
+      "indices": [
+        79,
+        82,
+        64,
+        67,
+        42,
+        102
+      ]
+    },
+    {
+      "clue": "Missing money-making mat minus sapphire-shaded silver seller.",
+      "explanation": "Trade Route - Trader = oute",
+      "answer": "oute",
+      "indices": [
+        150,
+        126,
+        94,
+        50
+      ]
+    },
+    {
+      "clue": "Imperial event that needs no man.",
+      "explanation": "Event from Empires. Taxman is a removed card.",
+      "answer": "Tax",
+      "indices": [
+        39,
+        135,
+        187
+      ]
+    },
+    {
+      "clue": "To curse charity.",
+      "explanation": "Donate event can be used to get rid of Curses, which do not seem useful for whatever you're donating them to.",
+      "answer": "Donate",
+      "indices": [
+        55,
+        144,
+        165,
+        4,
+        46,
+        54
+      ]
+    },
+    {
+      "clue": "+1 Card +1 Action; You may discard a pork product for +1 Answer.",
+      "explanation": "Text of Hamlet. Hamlet - ham = let",
+      "answer": "let",
+      "indices": [
+        61,
+        75,
+        111
+      ]
+    },
+    {
+      "clue": "___CFPICTT.TAETATO(BNA3TIAR).",
+      "explanation": "The first letters of every word of the text of Journey",
+      "answer": "YDD",
+      "indices": [
+        100,
+        63,
+        155
+      ]
+    }
+  ]
+}

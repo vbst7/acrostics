@@ -32,7 +32,29 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('about_page_button').addEventListener('click', function() {
         window.location.href = 'https://vbst7.github.io/acrostics/about.html';
       });
+
+    //import the file in the url, if any
+    const url = new URL(window.location.href)
+    const params = new URLSearchParams(url.search);
+    import_params(params.get('file'))
 });
+
+function import_params(url){
+    const fileUrl = `/acrostics/` + url
+    fetch(fileUrl)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        fill_in(data)
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+}
 
 function fill_in(file){
     const quote_grid = document.getElementById('quote_grid')
