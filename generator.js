@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('add_button').addEventListener('click', addRow);
     document.getElementById('check_button').addEventListener('click', isAnagram);
     document.getElementById('save_button').addEventListener('click', generate_wip); 
+    document.getElementById('randomize_button').addEventListener('click', randomize); 
     document.getElementById('generate_button').addEventListener('click', generate); 
     document.getElementById('back_page_button').addEventListener('click', function() {
         window.location.href = 'https://vbst7.github.io/acrostics/index.html';
@@ -82,6 +83,44 @@ function generate_wip(){
     download_json(wip, document.getElementById('title').value)
 
 
+}
+
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
+//randomizes the order of the questions
+function randomize(){
+    //go thru each answer and save it
+    const clues = document.getElementById('clueTable').querySelector('tbody').rows
+    let ans = []
+    for (let row of clues) {
+        let cells = row.children;
+        var q = {
+            clue:cells[1].children[0].value,
+            explanation:cells[2].children[0].value,
+            answer:cells[0].children[0].value
+        }
+        ans.push(q)
+    }
+
+    shuffleArray(ans)
+
+    //fill in each answer
+    let i = 0
+    for (let row of clues) {
+        let cells = row.children;
+        cells[0].children[0].value = ans[i].answer
+        cells[1].children[0].value = ans[i].clue
+        cells[2].children[0].value = ans[i].explanation
+        i += 1
+    }
 }
 
 function download_json(savedObject, name){

@@ -46,7 +46,7 @@ function compareLetters(A, Q) {
     const moreInAnswers = {};
     for (const char in countA) {
         if (countA[char] > (countQ[char] || 0)) {
-            moreInAnswers[char] = countA[char];
+            moreInAnswers[char] = countA[char] - (countQ[char] || 0);
         }
     }
 
@@ -54,7 +54,7 @@ function compareLetters(A, Q) {
     const moreInQuote = {};
     for (const char in countQ) {
         if (countQ[char] > (countA[char] || 0)) {
-            moreInQuote[char] = countQ[char];
+            moreInQuote[char] = countQ[char] - (countA[char] || 0);
         }
     }
 
@@ -80,12 +80,9 @@ function compareLetters(A, Q) {
 // Tries to find character c in string quote. Starts at a random index and loops around looking for a match
 // Returns the index a match was found at. If no match was found, returns -1
 function findMatch(c, quote, l){
-    console.log("Finding match for " + c)
     const start = getRandomNumber(l)
     let i = start
     do {
-        console.log("quote[i] = " + quote[i])
-        console.log(quote)
         if (quote[i] === c){
             return i;
         }
