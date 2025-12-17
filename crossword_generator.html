@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Generator</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/crossword.css">
+</head>
+<body>
+    <button class="generate-button" id="back_page_button">Play Crosswords</button>
+    <button class="generate-button" id="about_page_button">About</button>
+    <button class="generate-button" id="acrostic_page_button">Play Acrostics</button><br>
+
+    <label for="title">Title</label>
+    <input id="title" type="text" placeholder="Title">
+    <label for="creator">Creator</label>
+    <input id="creator" type="text" placeholder="Creator"><br>
+
+    <h3>Clues and Answers</h3>
+    <table id="clueTable">
+        <thead>
+            <tr>
+                <th>Clue</th>
+                <th>Answer</th>
+                <th>Explanation</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><textarea placeholder="Clue" style="width: 100%;"></textarea></td>
+                <td><input type="text" placeholder="Answer"></td>
+                <td><textarea placeholder="Explanation (optional)" style="width: 100%;"></textarea></td>
+                <td><button class="remove-button">X</button></td>
+            </tr>
+            <tr>
+                <td><textarea placeholder="Clue" style="width: 100%;"></textarea></td>
+                <td><input type="text" placeholder="Answer"></td>
+                <td><textarea placeholder="Explanation (optional)" style="width: 100%;"></textarea></td>
+                <td><button class="remove-button">X</button></td>
+            </tr>
+            <tr>
+                <td><textarea placeholder="Clue" style="width: 100%;"></textarea></td>
+                <td><input type="text" placeholder="Answer"></td>
+                <td><textarea placeholder="Explanation (optional)" style="width: 100%;"></textarea></td>
+                <td><button class="remove-button">X</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="add-button" id="add_button">+</button><br><br>
+
+    <div id="generation-status"></div>
+    <button class="generate-button" id="auto_generate_button">Auto-Generate Grid</button>
+    <button class="generate-button" id="manual_mode_button">Manual Grid Layout</button>
+    <button class="generate-button" id="save_button">Save Draft</button>
+    <button class="generate-button" id="generate_button">Generate Puzzle</button><br>
+    <input type="file" id="fileInput">
+    <label for="fileInput" class="generate-button">Import draft (.json)</label>
+
+    <div id="preview-container" hidden="true">
+        <h3>Preview</h3>
+        <div id="crossword-preview"></div>
+        <div id="clues-preview">
+            <div class="clue-section">
+                <h4>Across</h4>
+                <div id="across-preview"></div>
+            </div>
+            <div class="clue-section">
+                <h4>Down</h4>
+                <div id="down-preview"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="manual-editor" hidden="true">
+        <h3>Manual Grid Editor</h3>
+        <p>Click cells to toggle between letter/black. Drag to place words.</p>
+        <div>
+            <label>Grid Size: </label>
+            <input type="number" id="grid-width" value="15" min="5" max="25" style="width: 50px;">
+            x
+            <input type="number" id="grid-height" value="15" min="5" max="25" style="width: 50px;">
+            <button class="generate-button" id="create-grid-button">Create Grid</button>
+        </div>
+        <div id="manual-grid"></div>
+        <button class="generate-button" id="assign-words-button">Assign Words to Grid</button>
+    </div>
+</body>
+<script src='crossword_generator.js' defer></script>
+</html>

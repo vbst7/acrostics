@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/crossword.css">
+</head>
+<body>
+    <input type="file" id="fileInput"> 
+    <label for="fileInput" class="generate-button">Import Crossword (.json)</label>
+    <button class="generate-button" id="generate_page_button">Create your own Crossword</button>
+    <button class="generate-button" id="about_page_button">About</button>
+    <button class="generate-button" id="acrostic_page_button">Play Acrostics</button><br>
+
+    <div id="credit"></div>
+    <div id="puzzle-container" hidden="true">
+        <div class="crossword-wrapper">
+            <div id="crossword-grid"></div>
+            <div class="button-container">
+                <button class="check-button" id="check_solution_button">Check Solution</button>
+                <button class="check-button" id="reveal_solution_button">Reveal Solution</button>
+            </div>
+        </div>
+        <div id="clues-container">
+            <div class="clue-section">
+                <h3>Across</h3>
+                <div id="across-clues"></div>
+            </div>
+            <div class="clue-section">
+                <h3>Down</h3>
+                <div id="down-clues"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='crossword_viewer.js' defer></script>
+</html>
