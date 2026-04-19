@@ -1,37 +1,59 @@
-/* Crossword Grid Styling */
+/* Hide default file input */
+.file-input {
+    display: none;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+/* General layout for the puzzle viewer */
+.puzzle-view-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid styles */
 #crossword-grid {
     display: grid;
-    gap: 0;
-    border: 3px solid #333;
-    margin: 20px auto;
-    width: fit-content;
-    background: #333;
+    border: 2px solid black;
+    background-color: #f0f0f0;
+    /* This will be set by JS, but as a fallback: */
+    width: fit-content; 
 }
 
 .crossword-cell {
     width: 40px;
     height: 40px;
-    border: 1px solid #999;
-    background: white;
+    border: 1px solid #ccc;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
 }
 
-.crossword-cell.black-cell {
-    background: #333;
+.black-cell {
+    background-color: black;
     border: none;
 }
 
 .cell-number {
     position: absolute;
-    top: 2px;
-    left: 3px;
+    top: 1px;
+    left: 2px;
     font-size: 10px;
     font-weight: bold;
-    color: #333;
-    z-index: 1;
+    color: #555;
 }
 
 .cell-input {
@@ -39,167 +61,110 @@
     height: 100%;
     border: none;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
     text-transform: uppercase;
-    background: transparent;
-    outline: none;
+    background-color: transparent;
     padding: 0;
+    box-sizing: border-box;
+    caret-color: blue;
 }
 
+.cell-input:focus {
+    outline: none;
+}
+
+/* Highlighting styles */
 .crossword-cell.selected {
-    background: #ffffcc !important;
-    outline: 2px solid #4CAF50;
+    background-color: #a7d8ff; /* Light blue for the current cell */
 }
 
 .crossword-cell.highlighted {
-    background: #e8f5e9;
+    background-color: #cceeff; /* Lighter blue for the rest of the word */
 }
 
-.crossword-cell.correct {
-    background: #c8e6c9 !important;
+.crossword-cell.correct .cell-input {
+    color: green;
 }
 
-.crossword-cell.incorrect {
-    background: #ffcdd2 !important;
+.crossword-cell.incorrect .cell-input {
+    color: red;
 }
 
-/* Layout */
-#puzzle-container {
+/* Clue container styles */
+.puzzle-view-container {
     display: flex;
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-.crossword-wrapper {
-    flex: 0 0 auto;
-}
-
-#clues-container {
-    flex: 1;
-    min-width: 300px;
+.clues-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+    min-width: 450px; /* Give the clues some breathing room */
+    /* Make the clue box stick to the top of the viewport when scrolling */
+    position: sticky;
+    top: 20px; /* Some padding from the top of the screen */
+    align-self: flex-start; /* Important for sticky positioning in a flex container */
 }
 
 .clue-section {
-    margin-bottom: 30px;
-}
-
-.clue-section h3 {
-    margin-bottom: 15px;
-    color: #333;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
 }
 
 .clue-item {
-    margin-bottom: 10px;
-    padding: 8px;
+    padding: 4px 0;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-
-.clue-item:hover {
-    background: #f5f5f5;
 }
 
 .clue-item.active-clue {
-    background: #e8f5e9;
-    border-left: 3px solid #4CAF50;
+    background-color: #fff59d; /* Yellow highlight for active clue */
+    font-weight: bold;
 }
 
-/* Button Container */
-.button-container {
-    margin-top: 20px;
-    text-align: center;
+/* Manual Editor Styles */
+.manual-editor-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-/* Preview Grid */
-#crossword-preview {
+#manual-grid {
     display: grid;
-    gap: 0;
-    border: 2px solid #666;
-    margin: 20px auto;
-    width: fit-content;
-    background: #666;
+    border: 2px solid black;
+    margin-top: 10px;
 }
 
-.preview-cell {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #999;
-    background: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.preview-cell.black {
-    background: #333;
-    border: none;
-}
-
-.preview-number {
-    position: absolute;
-    top: 1px;
-    left: 2px;
-    font-size: 8px;
-    color: #666;
-}
-
-#preview-container {
-    margin-top: 40px;
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    background: #fafafa;
-}
-
-#clues-preview {
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-}
-
-#clues-preview .clue-section {
-    flex: 1;
-}
-
-#clues-preview h4 {
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Generation Status */
-#generation-status {
-    padding: 10px;
-    margin: 10px 0;
-    background: #e3f2fd;
-    border-left: 4px solid #2196F3;
-    font-weight: bold;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    #puzzle-container {
-        flex-direction: column;
-    }
-    
-    #clues-preview {
-        flex-direction: column;
-    }
-}
-
-/* Credit styling for crosswords */
-#credit {
+.manual-cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-sizing: border-box;
+    cursor: pointer;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
-    color: #333;
+    line-height: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.manual-cell.black {
+    background-color: black;
+}
+
+.validation-lists {
+    flex-grow: 1;
+}
+
+.validation-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    min-height: 100px;
 }
